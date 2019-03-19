@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: #000; }
+
+.main-header {
+  position: sticky;
+  top: 0;
+  width: 100%; }
+  .main-header .main-header__container {
+    width: 100vw;
+    height: 9vh;
+    padding: 0 15vw;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between; }
+    .main-header .main-header__container .main-header__logo {
+      display: flex;
+      align-items: center; }
+      .main-header .main-header__container .main-header__logo h3 {
+        margin: .4rem;
+        font-size: 1.4rem;
+        font-weight: 700; }
+      .main-header .main-header__container .main-header__logo i {
+        margin: .4rem;
+        font-size: 2rem;
+        color: #3FACE4; }
+    .main-header .main-header__container .main-nav {
+      display: flex;
+      align-items: center; }
+      .main-header .main-header__container .main-nav .main-nav__item {
+        margin: 1.3rem;
+        font-size: .9rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all .3s; }
+        .main-header .main-header__container .main-nav .main-nav__item:hover {
+          color: #3FACE4; }
+      .main-header .main-header__container .main-nav .main-nav__active {
+        color: #3FACE4; }
+
+.section-start {
+  height: 70vh;
+  width: 100vw;
+  background: url(../img/section-first.png) no-repeat center center/100%;
+  display: flex;
+  align-items: center; }
+  .section-start .section-start__container {
+    width: 40%;
+    position: relative;
+    left: 13vw;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 14px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .section-start .section-start__container .section-start__text h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      padding-bottom: .5em; }
+    .section-start .section-start__container .section-start__text p {
+      font-size: 1.4rem; }
+
+a.btn {
+  background: linear-gradient(to bottom, #3FACE4, #4e88aa);
+  padding: 2vh 4vw;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 4vh;
+  transition: all .3s;
+  text-transform: uppercase;
+  font-size: .9rem;
+  text-shadow: none; }
+  a.btn:hover {
+    color: #3FACE4;
+    background: #fff; }
