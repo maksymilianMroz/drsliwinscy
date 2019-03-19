@@ -11,9 +11,11 @@ a, a:active, a:hover, a:visited {
 .main-header {
   position: sticky;
   top: 0;
-  width: 100%; }
+  background-color: #fff;
+  z-index: 10;
+  border-bottom: 0.8px solid #3FACE4;
+  width: 100vw; }
   .main-header .main-header__container {
-    width: 100vw;
     height: 9vh;
     padding: 0 15vw;
     display: flex;
@@ -36,7 +38,7 @@ a, a:active, a:hover, a:visited {
       .main-header .main-header__container .main-nav .main-nav__item {
         margin: 1.3rem;
         font-size: .9rem;
-        font-weight: 500;
+        font-weight: 700;
         text-transform: uppercase;
         transition: all .3s; }
         .main-header .main-header__container .main-nav .main-nav__item:hover {
@@ -80,3 +82,26 @@ a.btn {
   a.btn:hover {
     color: #3FACE4;
     background: #fff; }
+
+.about-us {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about-us__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5vh 0;
+    flex-shrink: initial;
+    background-color: #dcf4ff;
+    padding: 5vh;
+    border-radius: 40px;
+    position: relative; }
+    .about-us__container img {
+      align-items: flex-end; }
+    .about-us__container .about-us__text {
+      padding: 1vh; }
+      .about-us__container .about-us__text h3 {
+        font-size: 1.8rem;
+        padding-bottom: 2vh; }
