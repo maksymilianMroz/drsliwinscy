@@ -145,8 +145,9 @@ a.btn,
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5vh 0;
-    background-color: $back;
+    margin: 16vh 0 0;
+    // background-color: $back;
+    background: linear-gradient(to bottom, rgb(172, 223, 255), rgb(233, 247, 255));
     padding: 5vh;
     border-radius: 40px;
     position: relative;
@@ -187,7 +188,7 @@ a.btn,
           height: 100%;
 
           ul {
-            font-size: 0.75rem;
+            font-size: 0.71rem;
             width: 85%;
             margin-top: 0.4rem;
             margin-right: 5%;
@@ -203,10 +204,10 @@ a.btn,
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            line-height: .2rem;
+            line-height: 0.2rem;
             height: 1rem;
             width: 68%;
-        }
+          }
         }
 
         .text__wyksztalcenie {
@@ -214,8 +215,6 @@ a.btn,
         }
 
         .text__diagnostyka {
-            
-            
         }
       }
 
@@ -247,3 +246,54 @@ a.btn,
 }
 
 // SECTION ABOUT US ENDS
+
+// KONTAKT
+
+.contact-section {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), $ice-blue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+
+    .contact-section__container {
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+
+        .contact-section__item {
+            flex-basis: 33%;
+            text-align: center;
+
+            h3 {
+                font-size: 1.4rem;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: .8rem;
+                line-height: 2rem;
+            }
+        }
+        
+    }
+}
+
+
+
+
+//KONTAKTY ENDS
+
+
+.google-map {
+    padding-top: 15vh;
+}
+
+.page-footer {
+    background-color: #222;
+    color: #fff;
+    font-size: .8rem;
+    text-align: center;
+}
