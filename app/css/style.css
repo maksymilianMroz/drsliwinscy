@@ -121,7 +121,7 @@ a.btn,
         height: 100%; }
         .about-us__container .about-us__text .text .text__diagnostyka,
         .about-us__container .about-us__text .text .text__wyksztalcenie {
-          text-align: justify;
+          text-align: left;
           position: absolute;
           top: 0;
           left: 0;
@@ -129,16 +129,24 @@ a.btn,
           height: 100%; }
           .about-us__container .about-us__text .text .text__diagnostyka ul,
           .about-us__container .about-us__text .text .text__wyksztalcenie ul {
-            font-size: .85rem;
-            width: 90%;
-            margin-top: .4rem;
-            margin-left: 1vw;
+            font-size: 0.75rem;
+            width: 85%;
+            margin-top: 0.4rem;
+            margin-right: 5%;
             line-height: 1.1rem; }
           .about-us__container .about-us__text .text .text__diagnostyka .text__title,
           .about-us__container .about-us__text .text .text__wyksztalcenie .text__title {
             font-size: 1.3rem;
             width: 100%; }
-        .about-us__container .about-us__text .text .text__diagnostyka {
+          .about-us__container .about-us__text .text .text__diagnostyka .listy,
+          .about-us__container .about-us__text .text .text__wyksztalcenie .listy {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            line-height: .2rem;
+            height: 1rem;
+            width: 68%; }
+        .about-us__container .about-us__text .text .text__wyksztalcenie {
           z-index: -1; }
       .about-us__container .about-us__text .text__buttons {
         display: flex;
