@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 a, a:active, a:hover, a:visited {
   text-decoration: none;
@@ -14,7 +14,7 @@ a, a:active, a:hover, a:visited {
   background-color: #fff;
   z-index: 10;
   border-bottom: 0.8px solid #3FACE4;
-  width: 100vw; }
+  width: 100%; }
   .main-header .main-header__container {
     height: 9vh;
     padding: 0 15vw;
@@ -25,11 +25,11 @@ a, a:active, a:hover, a:visited {
       display: flex;
       align-items: center; }
       .main-header .main-header__container .main-header__logo h3 {
-        margin: .4rem;
+        margin: 0.4rem;
         font-size: 1.4rem;
         font-weight: 700; }
       .main-header .main-header__container .main-header__logo i {
-        margin: .4rem;
+        margin: 0.4rem;
         font-size: 2rem;
         color: #3FACE4; }
     .main-header .main-header__container .main-nav {
@@ -37,10 +37,10 @@ a, a:active, a:hover, a:visited {
       align-items: center; }
       .main-header .main-header__container .main-nav .main-nav__item {
         margin: 1.3rem;
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-weight: 700;
         text-transform: uppercase;
-        transition: all .3s; }
+        transition: all 0.3s; }
         .main-header .main-header__container .main-nav .main-nav__item:hover {
           color: #3FACE4; }
       .main-header .main-header__container .main-nav .main-nav__active {
@@ -48,8 +48,8 @@ a, a:active, a:hover, a:visited {
 
 .section-start {
   height: 70vh;
-  width: 100vw;
-  background: url(../img/section-first.png) no-repeat center center/100%;
+  width: 100%;
+  background: url(../img/section-first.png) no-repeat center center/cover;
   display: flex;
   align-items: center; }
   .section-start .section-start__container {
@@ -65,21 +65,24 @@ a, a:active, a:hover, a:visited {
     .section-start .section-start__container .section-start__text h1 {
       margin: 0;
       font-size: 2.5rem;
-      padding-bottom: .5em; }
+      padding-bottom: 0.5em; }
     .section-start .section-start__container .section-start__text p {
       font-size: 1.4rem; }
 
-a.btn {
+a.btn,
+.btn {
   background: linear-gradient(to bottom, #3FACE4, #4e88aa);
   padding: 2vh 4vw;
   color: #fff;
   border-radius: 40px;
   margin-top: 4vh;
-  transition: all .3s;
+  transition: all 0.6s;
   text-transform: uppercase;
-  font-size: .9rem;
-  text-shadow: none; }
-  a.btn:hover {
+  font-size: 0.9rem;
+  text-shadow: none;
+  cursor: pointer; }
+  a.btn:hover,
+  .btn:hover {
     color: #3FACE4;
     background: #fff; }
 
@@ -89,19 +92,67 @@ a.btn {
   flex-direction: column;
   align-items: center; }
   .about-us__container {
+    width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 5vh 0;
-    flex-shrink: initial;
     background-color: #dcf4ff;
     padding: 5vh;
     border-radius: 40px;
     position: relative; }
     .about-us__container img {
-      align-items: flex-end; }
+      border-bottom: 1px solid #3FACE4; }
     .about-us__container .about-us__text {
-      padding: 1vh; }
+      padding: 1vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
       .about-us__container .about-us__text h3 {
         font-size: 1.8rem;
         padding-bottom: 2vh; }
+      .about-us__container .about-us__text p {
+        border-bottom: 1px solid #3FACE4;
+        padding-bottom: 1vh;
+        margin-bottom: 1vh; }
+      .about-us__container .about-us__text .text {
+        position: relative;
+        height: 100%; }
+        .about-us__container .about-us__text .text .text__diagnostyka,
+        .about-us__container .about-us__text .text .text__wyksztalcenie {
+          text-align: justify;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+          .about-us__container .about-us__text .text .text__diagnostyka ul,
+          .about-us__container .about-us__text .text .text__wyksztalcenie ul {
+            font-size: .85rem;
+            width: 90%;
+            margin-top: .4rem;
+            margin-left: 1vw;
+            line-height: 1.1rem; }
+          .about-us__container .about-us__text .text .text__diagnostyka .text__title,
+          .about-us__container .about-us__text .text .text__wyksztalcenie .text__title {
+            font-size: 1.3rem;
+            width: 100%; }
+        .about-us__container .about-us__text .text .text__diagnostyka {
+          z-index: -1; }
+      .about-us__container .about-us__text .text__buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 3vw; }
+        .about-us__container .about-us__text .text__buttons .btn {
+          padding: 1.2vh 2.2vw;
+          color: #3FACE4;
+          background: #fff;
+          margin: 0 4px; }
+          .about-us__container .about-us__text .text__buttons .btn:hover {
+            color: #fff;
+            background: #3FACE4; }
+        .about-us__container .about-us__text .text__buttons .active--btn {
+          color: #fff;
+          background: #3FACE4; }
