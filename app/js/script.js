@@ -55,11 +55,13 @@ function zmienActiveKontakt() {
 kontakt.addEventListener('click', zmienActiveKontakt);
 
 
-// PONIŻEJ ELEMENT KODU DO DOPRACOWANIA
 
-// const start = document.querySelector('a.start');
-// const oNas = document.querySelector('a.oNas');
-// const kontakt = document.querySelector('a.kontakt');
+
+
+
+
+
+
 
 window.onscroll = function navColorRotate() {
     

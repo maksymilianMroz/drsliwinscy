@@ -201,3 +201,7 @@ a.btn,
   color: #fff;
   font-size: .8rem;
   text-align: center; }
+
+@media screen and (max-width: 1140px) {
+  .section-start .section-start__container {
+    width: 50%; } }
