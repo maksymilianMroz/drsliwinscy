@@ -61,21 +61,24 @@ kontakt.addEventListener('click', zmienActiveKontakt);
 // const oNas = document.querySelector('a.oNas');
 // const kontakt = document.querySelector('a.kontakt');
 
-// window.onscroll = function () { 
-//     if (document.body.scrollTop =< 100 ) {
-//         start.classList.add("main-nav__active");
-//         start.classList.remove("main-nav__active");
-//     } 
-//     else {
-//         oNas.classList.add("main-nav__active");
-//         oNas.classList.remove("main-nav__active");
-//     }
-// };
+window.onscroll = function navColorRotate() {
+    
+    let position = window.pageYOffset;
 
-
-
-
-
+    if (position >= 0 && position <= 622) {
+        start.classList.add("main-nav__active");
+        oNas.classList.remove("main-nav__active");
+        kontakt.classList.remove("main-nav__active");
+    } else if (position >= 623 && position <= 1850) {
+        oNas.classList.add("main-nav__active");
+        start.classList.remove("main-nav__active");
+        kontakt.classList.remove("main-nav__active");
+    } else if (position > 1850) {
+        oNas.classList.remove("main-nav__active");
+        start.classList.remove("main-nav__active");
+        kontakt.classList.add("main-nav__active");
+    }
+}
 
 
 

@@ -67,7 +67,8 @@ a, a:active, a:hover, a:visited {
       font-size: 2.5rem;
       padding-bottom: 0.5em; }
     .section-start .section-start__container .section-start__text p {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      font-variant: small-caps; }
 
 a.btn,
 .btn {
