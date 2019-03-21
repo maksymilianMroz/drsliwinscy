@@ -146,8 +146,10 @@ a.btn,
             line-height: 0.2rem;
             height: 1rem;
             width: 68%; }
-        .about-us__container .about-us__text .text .text__wyksztalcenie {
+        .about-us__container .about-us__text .text .notactive-text {
           z-index: -1; }
+        .about-us__container .about-us__text .text .active-text {
+          z-index: 1; }
       .about-us__container .about-us__text .text__buttons {
         display: flex;
         justify-content: space-around;
@@ -164,6 +166,9 @@ a.btn,
         .about-us__container .about-us__text .text__buttons .active--btn {
           color: #fff;
           background: #3FACE4; }
+        .about-us__container .about-us__text .text__buttons .notactive--btn {
+          color: #3FACE4;
+          background: #fff; }
 
 .contact-section {
   width: 100%;

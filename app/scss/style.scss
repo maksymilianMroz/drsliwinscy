@@ -210,11 +210,12 @@ a.btn,
           }
         }
 
-        .text__wyksztalcenie {
+        .notactive-text {
           z-index: -1;
         }
 
-        .text__diagnostyka {
+        .active-text {
+          z-index: 1;
         }
       }
 
@@ -240,10 +241,18 @@ a.btn,
           color: #fff;
           background: $ice-blue;
         }
+
+        .notactive--btn {
+          color: $ice-blue;
+          background: #fff;
+        }
+
       }
     }
   }
 }
+
+
 
 // SECTION ABOUT US ENDS
 
