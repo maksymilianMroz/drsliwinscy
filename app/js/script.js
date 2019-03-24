@@ -28,6 +28,27 @@ function scrollTo(element, e) {
 
 
 
+  window.onscroll = function navColorRotate() {
+    
+    let position = window.pageYOffset;
+
+    if (position >= sekcjaStart.getBoundingClientRect().top && position <= sekcjaONas.getBoundingClientRect().top) {
+        start.classList.add("main-nav__active");
+        oNas.classList.remove("main-nav__active");
+        kontakt.classList.remove("main-nav__active");
+    } else if (position >= sekcjaONas.getBoundingClientRect().top && position <= sekcjaKontakt.getBoundingClientRect().top) {
+        oNas.classList.add("main-nav__active");
+        start.classList.remove("main-nav__active");
+        kontakt.classList.remove("main-nav__active");
+    } else if (position > sekcjaKontakt.getBoundingClientRect().top) {
+        oNas.classList.remove("main-nav__active");
+        start.classList.remove("main-nav__active");
+        kontakt.classList.add("main-nav__active");
+    }
+}
+
+
+
 
 
 
@@ -53,36 +74,6 @@ function zmienActiveKontakt() {
     kontakt.classList.add('main-nav__active');
 }
 kontakt.addEventListener('click', zmienActiveKontakt);
-
-
-
-
-
-
-
-
-
-
-window.onscroll = function navColorRotate() {
-    
-    let position = window.pageYOffset;
-
-    if (position >= 0 && position <= 622) {
-        start.classList.add("main-nav__active");
-        oNas.classList.remove("main-nav__active");
-        kontakt.classList.remove("main-nav__active");
-    } else if (position >= 623 && position <= 1850) {
-        oNas.classList.add("main-nav__active");
-        start.classList.remove("main-nav__active");
-        kontakt.classList.remove("main-nav__active");
-    } else if (position > 1850) {
-        oNas.classList.remove("main-nav__active");
-        start.classList.remove("main-nav__active");
-        kontakt.classList.add("main-nav__active");
-    }
-}
-
-
 
 
 
