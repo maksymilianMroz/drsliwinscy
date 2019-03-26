@@ -1,35 +1,32 @@
+const btn = document.querySelector('a.btn');
+const start = document.querySelector('a.start');
+const oNas = document.querySelector('a.oNas');
+const kontakt = document.querySelector('a.kontakt');
+
+const sekcjaONas = document.querySelector('.about-us');
+const sekcjaStart = document.querySelector('.section-start');
+const sekcjaKontakt = document.querySelector('.contact-section');
+
 function scrollTo(element, e) {
     e.preventDefault();
     window.scroll({
-      behavior: 'smooth',
-      left: 0,
-      top: element.getBoundingClientRect().top - 50 + window.scrollY
+        behavior: 'smooth',
+        left: 0,
+        top: element.getBoundingClientRect().top - 50 + window.scrollY
     });
-  }
-  
-  
-  const btn = document.querySelector('a.btn');
-  const start = document.querySelector('a.start');
-  const oNas = document.querySelector('a.oNas');
-  const kontakt = document.querySelector('a.kontakt');
+}
 
-  const sekcjaONas = document.querySelector('.about-us');
-  const sekcjaStart = document.querySelector('.section-start');
-  const sekcjaKontakt = document.querySelector('.contact-section');
-  
-  btn.addEventListener('click', (e) => scrollTo(sekcjaONas, e));
-  oNas.addEventListener('click', (e) => scrollTo(sekcjaONas, e));
-  
+btn.addEventListener('click', (e) => scrollTo(sekcjaONas, e));
+oNas.addEventListener('click', (e) => scrollTo(sekcjaONas, e));
 
-  start.addEventListener('click', (e) => scrollTo(sekcjaStart, e));
-  kontakt.addEventListener('click', (e) => scrollTo(sekcjaKontakt, e));
-  
+
+start.addEventListener('click', (e) => scrollTo(sekcjaStart, e));
+kontakt.addEventListener('click', (e) => scrollTo(sekcjaKontakt, e));
 
 
 
+window.onscroll = function navColorRotate() {
 
-  window.onscroll = function navColorRotate() {
-    
     let position = window.pageYOffset;
 
     if (position >= sekcjaStart.getBoundingClientRect().top && position <= sekcjaONas.getBoundingClientRect().top) {
@@ -46,11 +43,6 @@ function scrollTo(element, e) {
         kontakt.classList.add("main-nav__active");
     }
 }
-
-
-
-
-
 
 
 
@@ -89,7 +81,6 @@ let herWykSec = document.querySelector('.her-wyksztalcenie');
 let herDiaSec = document.querySelector('.her-diagnostyka');
 
 
-
 function wykBtnHer() {
     herWykSec.classList.add('active-text');
     herDiaSec.classList.add('notactive-text');
@@ -115,6 +106,11 @@ function diaBtnHer() {
     herDiaBtn.classList.remove('notactive--btn');
 };
 herDiaBtn.addEventListener('click', diaBtnHer);
+
+
+
+
+
 
 let hisWykBtn = document.querySelector('.his-wyksztalcenie__btn');
 let hisDiaBtn = document.querySelector('.his-diagnostyka__btn');
@@ -148,3 +144,51 @@ function diaBtnHis() {
     hisDiaBtn.classList.remove('notactive--btn');
 };
 hisDiaBtn.addEventListener('click', diaBtnHis);
+
+
+
+
+
+
+
+
+/////// NAWIGACJA HAMBURGER
+
+
+let hamburgerButton = document.querySelector('#ham');
+let mainNav = document.querySelector('nav');
+
+animujButton = () => {
+    hamburgerButton.classList.toggle('open');
+    mainNav.classList.toggle('main-nav__hamburger');
+    mainNav.classList.toggle('main-nav');
+    mainNav.classList.toggle('m-n');
+}
+
+hamburgerButton.addEventListener('click', animujButton);
+
+
+
+
+
+
+ukryjItemNav = () => {
+    hamburgerButton.classList.remove('open');
+    mainNav.classList.remove('main-nav__hamburger');
+    mainNav.classList.add('main-nav');
+    mainNav.classList.remove('m-n');
+}
+
+start.addEventListener('click', ukryjItemNav);
+oNas.addEventListener('click', ukryjItemNav);
+kontakt.addEventListener('click', ukryjItemNav);
+
+
+
+
+
+
+
+
+
+
