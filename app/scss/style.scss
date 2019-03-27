@@ -460,7 +460,7 @@ a.btn,
         }
 
         .text__buttons {
-          padding: 60px 3vw;
+          padding-top: 60px;
         }
       }
     }
@@ -498,6 +498,9 @@ a.btn,
       
 
       .section-start__text {
+        width: 80%;
+        margin: 0 auto;
+
         h1 {
           
           color: red;
@@ -509,6 +512,18 @@ a.btn,
         }
       }
     }
+}
+
+.about-us {
+  .about-us__container {
+    .about-us__text {
+      width: 60%;
+
+      .text__buttons {
+        padding-top: 22vh;
+      }
+    }
+  }
 }
 }
 

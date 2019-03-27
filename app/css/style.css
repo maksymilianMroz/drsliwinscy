@@ -290,7 +290,7 @@ a.btn,
       .about-us .about-us__container .about-us__text .text {
         height: 260px; }
       .about-us .about-us__container .about-us__text .text__buttons {
-        padding: 60px 3vw; }
+        padding-top: 60px; }
   .contact-section {
     width: 100%;
     height: 56vh;
@@ -305,10 +305,17 @@ a.btn,
         margin-top: 10px; } }
 
 @media (max-width: 960px) {
-  .section-start .section-start__container .section-start__text h1 {
-    color: red; }
-  .section-start .section-start__container .section-start__text p {
-    color: red; } }
+  .section-start .section-start__container .section-start__text {
+    width: 80%;
+    margin: 0 auto; }
+    .section-start .section-start__container .section-start__text h1 {
+      color: red; }
+    .section-start .section-start__container .section-start__text p {
+      color: red; }
+  .about-us .about-us__container .about-us__text {
+    width: 60%; }
+    .about-us .about-us__container .about-us__text .text__buttons {
+      padding-top: 22vh; } }
 
 @media (max-width: 719px) {
   .section-start .section-start__container .section-start__text h1 {
