@@ -218,7 +218,6 @@ a.btn,
 // SECTION ABOUT US
 
 .about-us {
-  // width: 100vw;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -230,7 +229,6 @@ a.btn,
     flex-direction: row;
     justify-content: center;
     margin: 16vh 0 0;
-    // background-color: $back;
     background: linear-gradient(to bottom, rgb(172, 223, 255), rgb(233, 247, 255));
     padding: 5vh;
     border-radius: 40px;
@@ -416,16 +414,143 @@ a.btn,
       }
     }
   }
+
+  .section-start {
+    .section-start__container {
+      width: 100%;
+      display: flex;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+
+      .section-start__text {
+        h1 {
+          font-size: 2rem;
+          padding-bottom: 0.4em;
+        }
+  
+        p {
+          font-size: 1.1rem;
+        }
+
+        a.btn, .btn {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    .about-us__container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0;
+      position: relative;
+
+      img:nth-child(2) {
+        order: -1;
+      }
+
+      .about-us__text {
+        height: 45%;
+
+        .text {
+          height: 260px;
+        }
+
+        .text__buttons {
+          padding: 60px 3vw;
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    width: 100%;
+    height: 56vh;
+    display: block;
+    margin-top: 5vh;
+
+    .contact-section__container {
+      margin-top: 80px;
+      width: 100%;
+      display: block;
+
+      .contact-section__item {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+
+
+
+
 }
 
 ///////////////////////////////////////////////////////////////
 @media (max-width: 960px) {
+  .section-start {
+    .section-start__container {
+      
+
+      .section-start__text {
+        h1 {
+          
+          color: red;
+          
+        }
+  
+        p {
+          color: red;
+        }
+      }
+    }
+}
 }
 
 /////////////////////////////////////////////////////////////
 @media (max-width: 719px) {
+  .section-start {
+    .section-start__container {
+      
+
+      .section-start__text {
+        h1 {
+          
+          color: green;
+          
+        }
+  
+        p {
+          color: green;
+        }
+      }
+    }
+}
 }
 
 /////////////////////////////////////////////////////////
 @media (max-width: 539px) {
+  .section-start {
+    .section-start__container {
+      
+
+      .section-start__text {
+        h1 {
+          
+          color: yellow;
+          
+        }
+  
+        p {
+          color: yellow;
+        }
+      }
+    }
 }
+}
+

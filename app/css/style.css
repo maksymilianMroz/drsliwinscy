@@ -263,4 +263,61 @@ a.btn,
   .main-header .main-header__container #ham {
     opacity: 1; }
   .main-header .main-header__container .main-nav {
-    opacity: 0; } }
+    opacity: 0; }
+  .section-start .section-start__container {
+    width: 100%;
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    align-items: center; }
+    .section-start .section-start__container .section-start__text h1 {
+      font-size: 2rem;
+      padding-bottom: 0.4em; }
+    .section-start .section-start__container .section-start__text p {
+      font-size: 1.1rem; }
+    .section-start .section-start__container .section-start__text a.btn, .section-start .section-start__container .section-start__text .btn {
+      width: 30%; }
+  .about-us .about-us__container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    position: relative; }
+    .about-us .about-us__container img:nth-child(2) {
+      order: -1; }
+    .about-us .about-us__container .about-us__text {
+      height: 45%; }
+      .about-us .about-us__container .about-us__text .text {
+        height: 260px; }
+      .about-us .about-us__container .about-us__text .text__buttons {
+        padding: 60px 3vw; }
+  .contact-section {
+    width: 100%;
+    height: 56vh;
+    display: block;
+    margin-top: 5vh; }
+    .contact-section .contact-section__container {
+      margin-top: 80px;
+      width: 100%;
+      display: block; }
+      .contact-section .contact-section__container .contact-section__item {
+        display: block;
+        margin-top: 10px; } }
+
+@media (max-width: 960px) {
+  .section-start .section-start__container .section-start__text h1 {
+    color: red; }
+  .section-start .section-start__container .section-start__text p {
+    color: red; } }
+
+@media (max-width: 719px) {
+  .section-start .section-start__container .section-start__text h1 {
+    color: green; }
+  .section-start .section-start__container .section-start__text p {
+    color: green; } }
+
+@media (max-width: 539px) {
+  .section-start .section-start__container .section-start__text h1 {
+    color: yellow; }
+  .section-start .section-start__container .section-start__text p {
+    color: yellow; } }
