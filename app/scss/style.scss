@@ -410,7 +410,7 @@ a.btn,
         opacity: 1;
       }
       .main-nav {
-        opacity: 0;
+        display: none;
       }
     }
   }
@@ -516,6 +516,8 @@ a.btn,
 
 .about-us {
   .about-us__container {
+    
+
     .about-us__text {
       width: 60%;
 
@@ -532,8 +534,11 @@ a.btn,
   .section-start {
     .section-start__container {
       
+      
 
       .section-start__text {
+        width: 95%;
+
         h1 {
           
           color: green;
@@ -546,7 +551,16 @@ a.btn,
       }
     }
 }
+.about-us {
+  .about-us__container {
+    .about-us__text {
+      width: 60%;
+    }
+    img {
+      width: 100%;
 }
+
+}}}
 
 /////////////////////////////////////////////////////////
 @media (max-width: 539px) {
@@ -567,5 +581,16 @@ a.btn,
       }
     }
 }
+
+.about-us {
+  .about-us__container {
+    .about-us__text {
+      width: 87%;
+    }
+    img {
+      width: 100%;
+}
+
+}}
 }
 
