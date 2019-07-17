@@ -1,3 +1,3 @@
-# drsliwinscy
+# Simple landing page did for doctors
 
-http://drsliwinscy.pl/ - adres do strony
+**http://drsliwinscy.pl/ - link to official page**
